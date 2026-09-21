@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karanam Maani Ganesh | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card-bg: #111827;
+      --border: #1f2937;
+      --text: #f3f4f6;
+      --text-muted: #9ca3af;
+      --accent: #38bdf8;
+      --accent-glow: rgba(56, 189, 248, 0.15);
+      --font: 'Inter', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 0 1.5rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 0;
+    }
+
+    header {
+      margin-bottom: 3.5rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    .subtitle {
+      font-size: 1.15rem;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 1.25rem;
+    }
+
+    .summary {
+      color: var(--text-muted);
+      font-size: 1rem;
+      margin-bottom: 1.75rem;
+      max-width: 720px;
+    }
+
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.1rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+      background-color: var(--accent);
+      color: #0b0f19;
+    }
+
+    .btn-primary:hover {
+      opacity: 0.9;
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    section {
+      margin-bottom: 3.5rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+      transition: border-color 0.2s;
+    }
+
+    .card:hover {
+      border-color: #374151;
+    }
+
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+      color: #fff;
+    }
+
+    .card-subtitle {
+      font-size: 0.85rem;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    .badge-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .badge {
+      background: var(--border);
+      color: #e5e7eb;
+      font-size: 0.8rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+    }
+
+    ul.experience-list {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    ul.experience-list li {
+      position: relative;
+      padding-left: 1.5rem;
+      border-left: 2px solid var(--border);
+    }
+
+    ul.experience-list li::before {
+      content: '';
+      position: absolute;
+      left: -5px;
+      top: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .role-title {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .role-meta {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>KARANAM MAANI GANESH</h1>
+      <p class="subtitle">Entry-Level Python Developer & Data Analytics Specialist</p>
+      <p class="summary">
+        Passionate technologist with hands-on exposure to Python, Machine Learning concepts, Power BI reporting, and web interface development. Experienced in building clear data visualization dashboards and user-friendly web solutions.
+      </p>
+      <div class="contact-bar">
+        <a href="mailto:karanamganesh509@gmail.com" class="btn btn-primary">Email Me</a>
+        <a href="tel:+918919521584" class="btn btn-outline">+91 89195 21584</a>
+        <a href="https://www.linkedin.com/in/karanam-maani-ganesh-4329272a0" target="_blank" rel="noopener noreferrer" class="btn btn-outline">LinkedIn Profile</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Core Competencies</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-title">Programming & Web</div>
+          <div class="badge-container">
+            <span class="badge">Python</span>
+            <span class="badge">C Programming</span>
+            <span class="badge">HTML</span>
+	    <span class="badge">SQL</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">Data & BI</div>
+          <div class="badge-container">
+            <span class="badge">Power BI</span>
+            <span class="badge">Dashboards</span>
+            <span class="badge">Data Visualization</span>
+            <span class="badge">Reporting</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">Machine Learning</div>
+          <div class="badge-container">
+            <span class="badge">Python ML</span>
+            <span class="badge">Ad Hoc Networks</span>
+            <span class="badge">Data-Driven Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Internship Experience</h2>
+      <ul class="experience-list">
+        <li>
+          <div class="role-title">Machine Learning Intern - Ad Hoc Network Project</div>
+          <div class="role-meta">Internship</div>
+          <p class="summary">
+            Applied Python in an internship focused on ad hoc networks and machine learning, gaining practical exposure to data-driven problem solving and communicating insights in a networking-oriented environment.
+          </p>
+        </li>
+        <li>
+          <div class="role-title">Power BI Intern</div>
+          <div class="role-meta">Short-Term Internship</div>
+          <p class="summary">
+            Built structured dashboards and reports in Power BI, strengthening core skills in data visualization, introductory data analysis, and dashboard-based reporting.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Academic Projects</h2>
+      <div class="card">
+        <div class="card-title">Railway Ticket Booking System</div>
+        <div class="card-subtitle">Front-End Development (HTML)</div>
+        <p class="summary">
+          Designed and developed a user-friendly railway ticket booking interface using HTML, translating functional booking system concepts into a structured, responsive web layout.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education & Certifications</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-title">Education</div>
+          <p class="summary" style="margin-bottom: 0.5rem;"><strong>Bachelor of Degree:</strong> Aditya Degree College (CGPA: 8.25)</p>
+          <p class="summary" style="margin-bottom: 0.5rem;"><strong>Intermediate:</strong> Chaitanya Junior College (CGPA: 7.85)</p>
+          <p class="summary"><strong>Secondary (SSC):</strong> Samyuktha KJM High School (CGPA: 8.90)</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Certifications</div>
+          <div class="badge-container">
+            <span class="badge">Cisco: Python Essentials 1 & 2</span>
+            <span class="badge">Cisco: C Programming</span>
+            <span class="badge">Pearson MePro: English & Communication</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Karanam Maani Ganesh. All rights reserved.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
